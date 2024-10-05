@@ -6,7 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  </head>
 <body class="bg-dark">
 
   <div id="stars"></div>
@@ -45,79 +46,93 @@
             <div class="row row-cols-1 row-cols-md-4 g-3">
               <a href="detail.html" style="color: inherit; text-decoration: none;">
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="ulm.png"  class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="card border-light" style="background-color: rgba(255,255,255, .05); backdrop-filter: blur(3px);">
+                    <img src="frame/img/front_proxima.png"  class="card-img-top" style="height: 250px;" alt="...">
+                    <div class="card-body text-light">
+                        <h5 class="card-title">Proxima Centauri b</h5>
+                        <p class="card-text">Proxima b, an Earth-size planet right outside our solar system in the habitable zone of its star, may not be able to keep a grip on its atmosphere, leaving the surface exposed to harmful stellar radiation and reducing its potential for habitability.</p>
+                    </div>
+                </div>
+                </div>
+              </a>
+              <a href="detail.html" class="d-block h10" style="color: inherit; text-decoration: none;">
+                <div class="col">
+                  <div class="card h-100 border-light" style="background-color: rgba(255,255,255, .05); backdrop-filter: blur(3px);">
+                    <img src="frame/img/front_gj1061d.png"  class="card-img-top" style="height: 250px;" alt="...">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">GJ-1061 D</h5>
+                      <p class="card-text"> possibly habitable worlds in tight orbits around small, red-dwarf stars in our galaxy. GJ 1061d is part of a system of at least three planets a mere 12 light-years from Earth. Its surface temperature might be just right for liquid water.</p>
                     </div>
                   </div>
                 </div>
               </a>
+              <a href="detail.html" class="d-block h10" style="color: inherit; text-decoration: none;">
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="ulm.png"  class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a short card.</p>
+                  <div class="card h-100 border-light" style="background-color: rgba(255,255,255, .05); backdrop-filter: blur(3px);">
+                    <img src="frame/img/front_ross128b.png"  class="card-img-top" style="height: 250px;" alt="...">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">ROSS-128</h5>
+                      <p class="card-text">Important discovery from Europe reveals a likely terrestrial, Earth-mass planet only 11 light-years away. Its now the second-nearest known terrestrial planet to Earth. the planet orbit in the inner edge of its star habitable zone, where there could be water. </p>
                     </div>
                   </div>
                 </div>
+              </a>
+              <a href="detail.html" class="d-block h10" style="color: inherit; text-decoration: none;">
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="ulm.png"  class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                  <div class="card h-100 border-light" style="background-color: rgba(255,255,255, .05); backdrop-filter: blur(3px);">
+                    <img src="frame/img/front_trappist1e.jpg"  class="card-img-top" style="height: 250px;" alt="...">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">Trappist-1e</h5>
+                      <p class="card-text"> Trappist-1e is roughly Earth-sized, yet has around 0.7 times the mass of our planet. It is the fourth planet from its star, orbiting at just 0.028 times the distance between Earth and the sun, completing one orbit in just 6.1 Earth days.</p>
                     </div>
                   </div>
                 </div>
+              </a>
+              <a href="detail.html" class="d-block h10" style="color: inherit; text-decoration: none;">
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="ulm.png"  class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="card h-100 border-light" style="background-color: rgba(255,255,255, .05); backdrop-filter: blur(3px);">
+                    <img src="frame/img/front_wolf.png"  class="card-img-top" style="height: 250px;" alt="...">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">GJ-1061 D</h5>
+                      <p class="card-text"> possibly habitable worlds in tight orbits around small, red-dwarf stars in our galaxy. GJ 1061d is part of a system of at least three planets a mere 12 light-years from Earth. Its surface temperature might be just right for liquid water.</p>
                     </div>
                   </div>
                 </div>
+              </a>
+              <a href="detail.html" class="d-block h10" style="color: inherit; text-decoration: none;">
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="ulm.png"  class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="card h-100 border-light" style="background-color: rgba(255,255,255, .05); backdrop-filter: blur(3px);">
+                    <img src="frame/img/front_teegarden.png"  class="card-img-top" style="height: 250px;" alt="...">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">GJ-1061 D</h5>
+                      <p class="card-text"> possibly habitable worlds in tight orbits around small, red-dwarf stars in our galaxy. GJ 1061d is part of a system of at least three planets a mere 12 light-years from Earth. Its surface temperature might be just right for liquid water.</p>
                     </div>
                   </div>
                 </div>
+              </a>
+              <a href="detail.html" class="d-block h10" style="color: inherit; text-decoration: none;">
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="ulm.png"  class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a short card.</p>
+                  <div class="card h-100 border-light" style="background-color: rgba(255,255,255, .05); backdrop-filter: blur(3px);">
+                    <img src="frame/img/front_lhs1140b.png"  class="card-img-top" style="height: 250px;" alt="...">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">GJ-1061 D</h5>
+                      <p class="card-text"> possibly habitable worlds in tight orbits around small, red-dwarf stars in our galaxy. GJ 1061d is part of a system of at least three planets a mere 12 light-years from Earth. Its surface temperature might be just right for liquid water.</p>
                     </div>
                   </div>
                 </div>
+              </a>
+              <a href="detail.html" class="d-block h10" style="color: inherit; text-decoration: none;">
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="ulm.png"  class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                  <div class="card h-100 border-light" style="background-color: rgba(255,255,255, .05); backdrop-filter: blur(3px);">
+                    <img src="frame/img/front_trappist1f.png"  class="card-img-top" style="height: 250px;" alt="...">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">GJ-1061 D</h5>
+                      <p class="card-text"> possibly habitable worlds in tight orbits around small, red-dwarf stars in our galaxy. GJ 1061d is part of a system of at least three planets a mere 12 light-years from Earth. Its surface temperature might be just right for liquid water.</p>
                     </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="ulm.png"  class="card-img-top" alt="...">
-                    
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
-                </div>
+              </a>
+                
               </div>
     </section>
 
