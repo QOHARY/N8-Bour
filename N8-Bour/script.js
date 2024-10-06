@@ -1,38 +1,24 @@
-function createPlanet(canvasId) {
-    const canvas = document.getElementById(canvasId);
-    const scene = new THREE.Scene();
-    const camera = new THREE.OrthographicCamera(
-        -cameraSize * aspect,  // Left
-        cameraSize * aspect,   // Right
-        cameraSize,            // Top
-        -cameraSize,           // Bottom
-        0.1,                   // Near
-        1000                   // Far
-    );
-    const renderer = new THREE.WebGLRenderer({ canvas });
+// Get all the sections and nav links
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-link');
 
-
-
-
-
-    renderer.setSize(canvas.clientWidth, canvas.clientHeight);
-
-    const geometry = new THREE.SphereGeometry(1, 32, 32); // Bentuk planet (bola)
-    const texture = new THREE.TextureLoader().load("frame/img/proxima.png"); // Gambar tekstur planet (contoh: Bumi)
-    const material = new THREE.MeshBasicMaterial({ map: texture });
-    const sphere = new THREE.Mesh(geometry, material);
-    scene.add(sphere);
-
-    camera.position.z = 3;
-
-    function animate() {
-        requestAnimationFrame(animate);
-        sphere.rotation.y += 0.01; // Memutar planet
-        renderer.render(scene, camera);
+// Add a scroll event listener
+window.addEventListener('scroll', () => {
+  let currentSection = '';
+  
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    
+    if (window.scrollY >= sectionTop - sectionHeight / 3) {
+      currentSection = section.getAttribute('id');
     }
-
-    animate();
-}
-
-// Render planet di tiap card
-createPlanet('planet1');
+  });
+  
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href').includes(currentSection)) {
+      link.classList.add('active');
+    }
+  });
+});

@@ -12,7 +12,7 @@ const geometry = new THREE.SphereGeometry(1, 64, 64);
 const textureLoader = new THREE.TextureLoader();
 
 // Load your planet texture
-const texture = textureLoader.load('img/proxima.png');  // Adjust the file extension if it's not a .jpg
+const texture = textureLoader.load('../img/ross.png');  // Adjust the file extension if it's not a .jpg
 
 // Create a material with the texture
 const material = new THREE.MeshBasicMaterial({
